@@ -142,12 +142,76 @@ public class Main {
         } else {
             System.out.println("Вход 250 рублей");
         }
-        System.out.println("=Задача № 13 II==");
+        System.out.println("=Задача № Доп А");
 
+        int a = 25;
+        int b = 2;
+        if (a > b) {
+            System.out.println("Число " + a + " больше");
+        } else if (b > a) {
+            System.out.println("Число " + b + " больше");
+        } else {
+            System.out.println("Числа равны");
+        }
+        System.out.println("=Задача № Доп В");
+        if (a > 0) {
+            System.out.println("Число " + a + " - положительное");
+        } else if (a == 0) {
+            System.out.println("Число " + a + " - равно нулю");
+        } else {
+            System.out.println("Число " + a + " - отрицательное");
+        }
+        System.out.println("=Задача № Доп С");
+        if (a % 3 == 0 && a % 5 == 0) {
+            System.out.println("Число делится на 3 и на 5");
+        } else if (a % 3 == 0 && a % 5 != 0) {
+            System.out.println("Число делится только на 3");
+        } else if (a % 3 != 0 && a % 5 == 0) {
+            System.out.println("Число делится на 5, но не на 3");
+        } else {
+            System.out.println("Число не делится ни на 3 ни на 5");
+        }
+        System.out.println("=Задача № Доп Д");
+        int temperature = 5;
+        if (temperature < 0) {
+            System.out.println("На улице холодно");
+        } else if (temperature < 15) {
+            System.out.println("На улице прохладно");
+        } else if (temperature < 25) {
+            System.out.println("На улице тепло");
+        } else {
+            System.out.println("На улице жарко");
+        }
+        System.out.println("=Задача № Доп Г");
+        int agePeopleOfCinema = 61;
+        boolean isWeekend = false;
+        if (agePeopleOfCinema < 7) {
+            System.out.println("Билеты в кино бесплатно всегда");
+        } else if (agePeopleOfCinema <= 17) {
+            if (isWeekend) {
+                System.out.println("Стоимость билета - 150 рублей");
+            } else {
+                System.out.println("Стоимость билета - 100 рублей");
+            }
+        } else if (agePeopleOfCinema <= 60) {
+            if (isWeekend) {
+                System.out.println("Стоимость билета - 400 рублей");
+            } else {
+                System.out.println("Стоимость билета - 300 рублей");
+            }
+        } else {
+            System.out.println("Стоимость билета - 150 рублей");
+        }
 
-
-
-
+        int password = 456;
+        int login = 123;
+        if (password == 456 && login == 123) {
+            System.out.println("Доступ разрешен");
+        } else if (login != 123) {
+            System.out.println("Неверный логин");
+        } else {
+            System.out.println("Неверный пароль");
+        }
 
 
     }
